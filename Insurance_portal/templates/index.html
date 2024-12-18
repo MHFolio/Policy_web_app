@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html style="background-color: #f5f9ff; font-family: Arial, sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Insurance</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #4caf50;
+            color: #fff;
+            /* text-align: center; */
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .cta-button {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Get Insurance</h1><a href="{{ url_for('Signup') }}">Sign Up</a>
+            <a href="{{ url_for('Login') }}">Login In</a> </div>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/image.jpg') }}" alt="My Image">
+
+        </div>
+        <div class="content">
+            <p>
+                At Get Insurance, we prioritize your peace of mind. Our comprehensive plans safeguard what matters most—your health, family, home, and business. With tailored coverage, reliable support, and fast claims processing, we’re here to protect you from life’s uncertainties. Trust us to secure your future with confidence and care.
+            </p>
+            <h2>Types of Insurance</h2>
+            <p>Insurance provides financial security in various aspects of life. Health insurance covers medical expenses, ensuring access to quality healthcare without financial strain. It often includes preventive care, hospital stays, and prescription drugs. Auto insurance protects against vehicle-related damages, accidents, and liabilities, offering peace of mind for drivers. Comprehensive policies may cover theft, natural disasters, and collision repairs. Business insurance safeguards enterprises from risks like property damage, liability claims, or employee-related incidents. It ensures business continuity by covering operational losses and legal expenses. These insurance types provide tailored solutions to protect individuals, families, and businesses from unforeseen challenges.</p>
+            <p>click the below button to select Insurance</p>
+            <a href="Form.html">Choose insurance</a>
+        </div>
+      
+    </div>
+    <footer>
+        &copy; 2024 Get Insurance. All rights reserved.
+    </footer>
+</body>
+</html>
